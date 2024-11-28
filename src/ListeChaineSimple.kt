@@ -23,6 +23,18 @@ class LinkyList<E> {
         linkTail(element)
     }
 
+    fun clear() {
+        var x = head
+        while (x != null) {
+            val next = x.next
+            x.next = null
+            x = next
+        }
+        tail = null
+        head = tail
+        size = 0
+    }
+
     fun <T> addAll(index: Int, arr: Array<T>): Boolean where T : E {
         validatePositionIndex(index)
 
