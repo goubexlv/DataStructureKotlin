@@ -125,7 +125,7 @@ fun main(args: Array<String>) {
     println("$languages - Empty? -- ${languages.isEmpty()}")
     languages.enqueue("C")
     println("$languages - Empty? -- ${languages.isEmpty()}")
-    languages.dequeue()
+    languages.dequeue() 
     println("$languages - Empty? -- ${languages.isEmpty()}")
     languages.dequeue()
     println("$languages - Empty? -- ${languages.isEmpty()}")
